@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Parse
-%define		pnam	RecDescent
+%define	pdir	Parse
+%define	pnam	RecDescent
 Summary:	Parse::RecDescent - generate recursive-descent parsers
 Summary(pl):	Parse::RecDescent - generowanie zmniejszaj±cych rekurencyjnie analizatorów
 Name:		perl-Parse-RecDescent
