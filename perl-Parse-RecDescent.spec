@@ -3,8 +3,8 @@
 Summary:	Perl Parse::RecDescent module
 Summary(pl):	Modu³ Perla Parse::RecDescent
 Name:		perl-Parse-RecDescent
-Version:	1.79
-Release:	2
+Version:	1.80
+Release:	1
 License:	Perl Artistic License
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
