@@ -53,12 +53,12 @@ gramatyki, podobn± do u¿ywanej przez yacca. Udostêpnia on:
   * Powtarzane, opcjonalne i alternatywne podregu³y w obrêbie
     produkcji,
   * Podregu³y pó¼nego wi±zania (wysy³ane w chwili uruchomienia),
-  * Pe³en dostêp do Perlaw obrêbie akcji okre¶lonych jako czê¶æ
+  * Pe³en dostêp do Perla w obrêbie akcji okre¶lonych jako czê¶æ
     gramatyki,
   * Proste, zautomatyzowane sygnalizowanie b³êdów podczas generacji
     analizatora i podczas analizy,
-  * Mo¿liwo¶æ komitowania, cofniêcia komitu oraz odrzucania
-    poszczególnych produkcji podczas alnalizy,
+  * Mo¿liwo¶æ zatwierdzenia, cofniêcia oraz odrzucania poszczególnych
+    produkcji podczas analizy,
   * Przyrostowe rozszerzanie gramatyki podlegaj±cej analizie (nawet
     podczas samej analizy),
   * Prekompilacjê obiektów analizatora,
