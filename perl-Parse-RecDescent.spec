@@ -3,14 +3,15 @@
 Summary:	Perl Parse::RecDescent module
 Summary(pl):	Modu³ Perla Parse::RecDescent
 Name:		perl-Parse-RecDescent
-Version:	1.77
-Release:	2
+Version:	1.79
+Release:	1
 License:	Perl Artistic License
 Group:		Development/Languages/Perl
+Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Parse/Parse-RecDescent-%{version}.tar.gz
-Patch0:		perl-Parse-RecDescent-paths.patch
-Patch1:		perl-Parse-RecDescent-dep.patch
+Patch0:		%{name}-paths.patch
+Patch1:		%{name}-dep.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-18
 BuildRequires:	perl >= 5.005_03-14
 Requires:	perl
@@ -43,7 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Parse/RecDescent
   sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
+  mv -f .packlist.new .packlist
 )
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
