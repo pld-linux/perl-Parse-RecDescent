@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests # do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Parse
@@ -10,7 +10,6 @@ Summary(pl):	Parse::RecDescent - generowanie zmniejszaj±cych rekurencyjnie anali
 Name:		perl-Parse-RecDescent
 Version:	1.94
 Release:	2
-# Perl Artistic Licence http://www.perl.com/perl/misc/Artistic.html
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -74,6 +73,7 @@ gramatyki, podobn± do u¿ywanej przez yacca. Udostêpnia on:
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+
 %{?with_tests:%{__make} test}
 
 %install
