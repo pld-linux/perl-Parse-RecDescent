@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Parse
 %define	pnam	RecDescent
-%include	/usr/lib/rpm/macros.perl
 Summary:	Perl Parse::RecDescent module
 Summary(pl):	Modu³ Perla Parse::RecDescent
 Name:		perl-Parse-RecDescent
 Version:	1.80
-Release:	5
-
+Release:	6
 License:	Perl Artistic License
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -27,7 +26,7 @@ Perl Parse::RecDescent module.
 Modu³ Perla Parse::RecDescent.
 
 %prep
-%setup -q -n Parse-RecDescent-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 %patch0 -p1
 
 %build
