@@ -16,7 +16,7 @@ BuildRequires:	perl >= 5.005_03-14
 Requires:	perl
 Requires:	%{perl_sitearch}
 Obsoletes:	perl-Text-Balanced
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Perl Parse::RecDescent module.
