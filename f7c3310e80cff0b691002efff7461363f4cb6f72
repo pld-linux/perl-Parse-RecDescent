@@ -1,0 +1,3 @@
+- added '%%include /usr/lib/rpm/macros.perl'
+- modified BuildRequires rules
+- added Obsoletes: perl-Text-Balanced
