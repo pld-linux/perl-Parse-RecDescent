@@ -1,11 +1,15 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Parse
-%define	pnam	RecDescent
+%define		pdir	Parse
+%define		pnam	RecDescent
 Summary:	Perl Parse::RecDescent module
 Summary(pl):	Modu³ Perla Parse::RecDescent
 Name:		perl-Parse-RecDescent
 Version:	1.80
-Release:	6
+Release:	7
 License:	Perl Artistic License
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -32,20 +36,19 @@ Modu³ Perla Parse::RecDescent.
 %build
 perl Makefile.PL
 %{__make}
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README Changes
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
-%{perl_sitelib}/Parse/*
-%{perl_sitelib}/Text/*
+%doc README Changes
+%{perl_sitelib}/Parse/*.pm
+%{perl_sitelib}/Text/*.pm
 %{_mandir}/man3/*
