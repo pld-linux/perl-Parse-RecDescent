@@ -3,7 +3,7 @@ Summary:	Perl Parse::RecDescent module
 Summary(pl):	Modu³ Perla Parse::RecDescent
 Name:		perl-Parse-RecDescent
 Version:	1.66
-Release:	2
+Release:	3
 Copyright:	Perl Artistic License
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
@@ -50,7 +50,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_sitelib}/Parse
+%{perl_sitelib}/Parse/*
 %{perl_sitelib}/Text/*
 
 %dir %{perl_sitearch}/auto/Parse/RecDescent
