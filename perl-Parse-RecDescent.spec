@@ -1,4 +1,4 @@
-%define		perl_sitelib	%(eval "`perl -V:installsitelib`"; echo $installsitelib)
+%include	/usr/lib/rpm/macros.perl
 Summary:	Perl Parse::RecDescent module
 Summary(pl):	Modu³ Perla Parse::RecDescent
 Name:		perl-Parse-RecDescent
@@ -9,9 +9,11 @@ Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Parse-RecDescent-%{version}.tar.gz
 Patch:		perl-Parse-RecDescent.patch
-BuildRequires:	perl >= 5.005_03-10
+BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	perl >= 5.005_03-14
 Requires:	perl
 Requires:	%{perl_sitelib}
+Obsoletes:	perl-Text-Balanced
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
