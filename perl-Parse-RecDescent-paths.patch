@@ -1,277 +1,312 @@
---- Parse-RecDescent-1.77/demo_NL2SQL	Wed Jun 23 09:05:53 1999
-+++ Parse-RecDescent-1.77.paths/demo_NL2SQL	Sat Feb 19 22:35:00 2000
-@@ -1,4 +1,4 @@
--#! /usr/local/bin/perl -ws
-+#!/usr/bin/perl -ws
- 
- use Parse::RecDescent;
- 
---- Parse-RecDescent-1.77/demo_OOparsetree.pl	Thu Jul 29 03:43:17 1999
-+++ Parse-RecDescent-1.77.paths/demo_OOparsetree.pl	Sat Feb 19 22:35:00 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_OOparsetree.pl Parse-RecDescent-1.79.new/demo/demo_OOparsetree.pl
+--- Parse-RecDescent-1.79/demo/demo_OOparsetree.pl	Thu Jul 29 03:43:17 1999
++++ Parse-RecDescent-1.79.new/demo/demo_OOparsetree.pl	Mon Sep 18 08:43:07 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -sw
 +#!/usr/bin/perl -sw
  
  # PARSE AND EVALUATE LOGICAL EXPRESSIONS WITH A OO PARSE TREE
  
---- Parse-RecDescent-1.77/demo_autoscoresep.pl	Fri Oct  8 05:46:03 1999
-+++ Parse-RecDescent-1.77.paths/demo_autoscoresep.pl	Sat Feb 19 22:34:59 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_autoscoresep.pl Parse-RecDescent-1.79.new/demo/demo_autoscoresep.pl
+--- Parse-RecDescent-1.79/demo/demo_autoscoresep.pl	Fri Oct  8 05:46:03 1999
++++ Parse-RecDescent-1.79.new/demo/demo_autoscoresep.pl	Mon Sep 18 08:45:37 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -ws
 +#!/usr/bin/perl -ws
  
  use Parse::RecDescent;
  
---- Parse-RecDescent-1.77/demo_bad.pl	Fri Sep 25 06:11:18 1998
-+++ Parse-RecDescent-1.77.paths/demo_bad.pl	Sat Feb 19 22:34:59 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_bad.pl Parse-RecDescent-1.79.new/demo/demo_bad.pl
+--- Parse-RecDescent-1.79/demo/demo_bad.pl	Fri Apr 21 01:45:14 2000
++++ Parse-RecDescent-1.79.new/demo/demo_bad.pl	Mon Sep 18 08:43:54 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -sw
 +#!/usr/bin/perl -sw
  
  # SHOWCASE VARIOUS ERROR MESSAGES WITH A VERY UNWELL GRAMMAR
  
---- Parse-RecDescent-1.77/demo_buildcalc.pl	Sun Nov 21 01:29:38 1999
-+++ Parse-RecDescent-1.77.paths/demo_buildcalc.pl	Sat Feb 19 22:34:59 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_buildcalc.pl Parse-RecDescent-1.79.new/demo/demo_buildcalc.pl
+--- Parse-RecDescent-1.79/demo/demo_buildcalc.pl	Mon Feb 28 19:08:38 2000
++++ Parse-RecDescent-1.79.new/demo/demo_buildcalc.pl	Mon Sep 18 08:45:35 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -ws
 +#!/usr/bin/perl -ws
  
  use Parse::RecDescent;
  
---- Parse-RecDescent-1.77/demo_calc.pl	Tue Jun 29 08:59:46 1999
-+++ Parse-RecDescent-1.77.paths/demo_calc.pl	Sat Feb 19 22:34:59 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_calc.pl Parse-RecDescent-1.79.new/demo/demo_calc.pl
+--- Parse-RecDescent-1.79/demo/demo_calc.pl	Tue Jun 29 08:59:46 1999
++++ Parse-RecDescent-1.79.new/demo/demo_calc.pl	Mon Sep 18 08:43:49 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -ws
 +#!/usr/bin/perl -ws
  
  use Parse::RecDescent;
  
---- Parse-RecDescent-1.77/demo_cpp.pl	Fri Sep 25 06:11:17 1998
-+++ Parse-RecDescent-1.77.paths/demo_cpp.pl	Sat Feb 19 22:34:59 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_cpp.pl Parse-RecDescent-1.79.new/demo/demo_cpp.pl
+--- Parse-RecDescent-1.79/demo/demo_cpp.pl	Fri Sep 25 06:11:17 1998
++++ Parse-RecDescent-1.79.new/demo/demo_cpp.pl	Mon Sep 18 08:43:44 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -sw
 +#!/usr/bin/perl -sw
  
  # RECURSIVE #includes DURING A RECURSIVE DESCENT
  
---- Parse-RecDescent-1.77/demo_decomment.pl	Tue Sep 21 07:31:56 1999
-+++ Parse-RecDescent-1.77.paths/demo_decomment.pl	Sat Feb 19 22:34:59 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_decomment.pl Parse-RecDescent-1.79.new/demo/demo_decomment.pl
+--- Parse-RecDescent-1.79/demo/demo_decomment.pl	Tue Sep 21 07:31:56 1999
++++ Parse-RecDescent-1.79.new/demo/demo_decomment.pl	Mon Sep 18 08:43:40 2000
 @@ -1,4 +1,4 @@
 -#!/usr/local/bin/perl -ws
 +#!/usr/bin/perl -ws
  
  # REMOVE COMMENTS FROM C++ CODE
  
---- Parse-RecDescent-1.77/demo_decomment_nonlocal.pl	Tue Jun 29 03:38:49 1999
-+++ Parse-RecDescent-1.77.paths/demo_decomment_nonlocal.pl	Sat Feb 19 22:34:59 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_decomment_nonlocal.pl Parse-RecDescent-1.79.new/demo/demo_decomment_nonlocal.pl
+--- Parse-RecDescent-1.79/demo/demo_decomment_nonlocal.pl	Tue Jun 29 03:38:49 1999
++++ Parse-RecDescent-1.79.new/demo/demo_decomment_nonlocal.pl	Mon Sep 18 08:45:27 2000
 @@ -1,4 +1,4 @@
 -#!/usr/local/bin/perl -ws
 +#!/usr/bin/perl -ws
  
  # REMOVE COMMENTS FROM C++ CODE
  
---- Parse-RecDescent-1.77/demo_delete.pl	Fri Apr  2 05:00:44 1999
-+++ Parse-RecDescent-1.77.paths/demo_delete.pl	Sat Feb 19 22:34:59 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_delete.pl Parse-RecDescent-1.79.new/demo/demo_delete.pl
+--- Parse-RecDescent-1.79/demo/demo_delete.pl	Fri Apr  2 05:00:44 1999
++++ Parse-RecDescent-1.79.new/demo/demo_delete.pl	Mon Sep 18 08:45:22 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -sw
 +#!/usr/bin/perl -sw
  
  # DELETABLE PRODUCTIONS
  
---- Parse-RecDescent-1.77/demo_derived.pl	Fri Sep 25 06:11:11 1998
-+++ Parse-RecDescent-1.77.paths/demo_derived.pl	Sat Feb 19 22:34:59 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_derived.pl Parse-RecDescent-1.79.new/demo/demo_derived.pl
+--- Parse-RecDescent-1.79/demo/demo_derived.pl	Fri Sep 25 06:11:11 1998
++++ Parse-RecDescent-1.79.new/demo/demo_derived.pl	Mon Sep 18 08:43:35 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -sw
 +#!/usr/bin/perl -sw
  
  # THE OL' "EMPTY SUBCLASS IN THE DEMO" TRICK.
  
---- Parse-RecDescent-1.77/demo_errors.pl	Fri Sep 25 06:11:18 1998
-+++ Parse-RecDescent-1.77.paths/demo_errors.pl	Sat Feb 19 22:34:59 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_errors.pl Parse-RecDescent-1.79.new/demo/demo_errors.pl
+--- Parse-RecDescent-1.79/demo/demo_errors.pl	Fri Sep 25 06:11:18 1998
++++ Parse-RecDescent-1.79.new/demo/demo_errors.pl	Mon Sep 18 08:45:15 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -sw
 +#!/usr/bin/perl -sw
  
  # THE ONLY TRUE MISTAKES ARE THE ONES YOU NEVER MAKE
  
---- Parse-RecDescent-1.77/demo_implicit.pl	Fri Sep 25 06:11:11 1998
-+++ Parse-RecDescent-1.77.paths/demo_implicit.pl	Sat Feb 19 22:34:59 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_implicit.pl Parse-RecDescent-1.79.new/demo/demo_implicit.pl
+--- Parse-RecDescent-1.79/demo/demo_implicit.pl	Fri Sep 25 06:11:11 1998
++++ Parse-RecDescent-1.79.new/demo/demo_implicit.pl	Mon Sep 18 08:43:31 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -sw
 +#!/usr/bin/perl -sw
  
  # IMPLICIT SUB RULES, OKAY!
  
---- Parse-RecDescent-1.77/demo_language.pl	Mon Apr 19 04:05:28 1999
-+++ Parse-RecDescent-1.77.paths/demo_language.pl	Sat Feb 19 22:34:59 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_language.pl Parse-RecDescent-1.79.new/demo/demo_language.pl
+--- Parse-RecDescent-1.79/demo/demo_language.pl	Mon Apr 19 04:05:28 1999
++++ Parse-RecDescent-1.79.new/demo/demo_language.pl	Mon Sep 18 08:45:09 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -ws
 +#!/usr/bin/perl -ws
  
  #SHARED SYMBOL_TABLE
  
---- Parse-RecDescent-1.77/demo_leftassoc.pl	Thu Oct 22 04:13:52 1998
-+++ Parse-RecDescent-1.77.paths/demo_leftassoc.pl	Sat Feb 19 22:34:59 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_leftassoc.pl Parse-RecDescent-1.79.new/demo/demo_leftassoc.pl
+--- Parse-RecDescent-1.79/demo/demo_leftassoc.pl	Thu Oct 22 04:13:52 1998
++++ Parse-RecDescent-1.79.new/demo/demo_leftassoc.pl	Mon Sep 18 08:43:26 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -ws
 +#!/usr/bin/perl -ws
  
  # THE COMMONEST REASON FOR WANTING LEFT RECURSION
  
---- Parse-RecDescent-1.77/demo_leftop.pl	Fri Jun 11 04:07:59 1999
-+++ Parse-RecDescent-1.77.paths/demo_leftop.pl	Sat Feb 19 22:34:59 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_leftop.pl Parse-RecDescent-1.79.new/demo/demo_leftop.pl
+--- Parse-RecDescent-1.79/demo/demo_leftop.pl	Fri Jun 11 04:07:59 1999
++++ Parse-RecDescent-1.79.new/demo/demo_leftop.pl	Mon Sep 18 08:45:05 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -ws
 +#!/usr/bin/perl -ws
  
  # THE COMMONEST REASON FOR WANTING LEFT RECURSION
  
---- Parse-RecDescent-1.77/demo_lexer.pl	Fri Sep 25 06:11:16 1998
-+++ Parse-RecDescent-1.77.paths/demo_lexer.pl	Sat Feb 19 22:35:00 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_lexer.pl Parse-RecDescent-1.79.new/demo/demo_lexer.pl
+--- Parse-RecDescent-1.79/demo/demo_lexer.pl	Fri Sep 25 06:11:16 1998
++++ Parse-RecDescent-1.79.new/demo/demo_lexer.pl	Mon Sep 18 08:43:21 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -sw
 +#!/usr/bin/perl -sw
  
  # IT'S A PARSER *AND* A LEXER...
  
---- Parse-RecDescent-1.77/demo_logic.pl	Fri Sep 25 06:11:15 1998
-+++ Parse-RecDescent-1.77.paths/demo_logic.pl	Sat Feb 19 22:35:00 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_lisplike.pl Parse-RecDescent-1.79.new/demo/demo_lisplike.pl
+--- Parse-RecDescent-1.79/demo/demo_lisplike.pl	Tue Dec 14 05:05:46 1999
++++ Parse-RecDescent-1.79.new/demo/demo_lisplike.pl	Mon Sep 18 08:45:01 2000
+@@ -1,4 +1,4 @@
+-#! /usr/local/bin/perl -w
++#!/usr/bin/perl -w
+ 
+ use Parse::RecDescent;
+ use Data::Dumper;
+diff -Nru Parse-RecDescent-1.79/demo/demo_logic.pl Parse-RecDescent-1.79.new/demo/demo_logic.pl
+--- Parse-RecDescent-1.79/demo/demo_logic.pl	Fri Sep 25 06:11:15 1998
++++ Parse-RecDescent-1.79.new/demo/demo_logic.pl	Mon Sep 18 08:43:16 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -sw
 +#!/usr/bin/perl -sw
  
  # PARSE LOGICAL EXPRESSIONS
  
---- Parse-RecDescent-1.77/demo_matchrule.pl	Fri Sep 25 06:11:17 1998
-+++ Parse-RecDescent-1.77.paths/demo_matchrule.pl	Sat Feb 19 22:35:00 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_matchrule.pl Parse-RecDescent-1.79.new/demo/demo_matchrule.pl
+--- Parse-RecDescent-1.79/demo/demo_matchrule.pl	Fri Sep 25 06:11:17 1998
++++ Parse-RecDescent-1.79.new/demo/demo_matchrule.pl	Mon Sep 18 08:44:56 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -sw
 +#!/usr/bin/perl -sw
  
  use vars qw($animal);
  use Parse::RecDescent;
---- Parse-RecDescent-1.77/demo_mccoy.pl	Sun May 16 22:19:34 1999
-+++ Parse-RecDescent-1.77.paths/demo_mccoy.pl	Sat Feb 19 22:35:00 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_mccoy.pl Parse-RecDescent-1.79.new/demo/demo_mccoy.pl
+--- Parse-RecDescent-1.79/demo/demo_mccoy.pl	Sun May 16 22:19:34 1999
++++ Parse-RecDescent-1.79.new/demo/demo_mccoy.pl	Mon Sep 18 08:43:11 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -sw
 +#!/usr/bin/perl -sw
  
  # DAMMIT, JIM, I'M A DOCTOR, NOT A PERL PROGRAM!
  
---- Parse-RecDescent-1.77/demo_methods.pl	Fri Sep 25 06:11:16 1998
-+++ Parse-RecDescent-1.77.paths/demo_methods.pl	Sat Feb 19 22:35:00 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_methods.pl Parse-RecDescent-1.79.new/demo/demo_methods.pl
+--- Parse-RecDescent-1.79/demo/demo_methods.pl	Fri Sep 25 06:11:16 1998
++++ Parse-RecDescent-1.79.new/demo/demo_methods.pl	Mon Sep 18 08:44:37 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -sw
 +#!/usr/bin/perl -sw
  
  # DEMONSTRATE USING DERIVED CLASS METHODS IN A PARSER
  
---- Parse-RecDescent-1.77/demo_operator.pl	Wed Apr 28 05:14:32 1999
-+++ Parse-RecDescent-1.77.paths/demo_operator.pl	Sat Feb 19 22:35:00 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_operator.pl Parse-RecDescent-1.79.new/demo/demo_operator.pl
+--- Parse-RecDescent-1.79/demo/demo_operator.pl	Wed Apr 28 05:14:32 1999
++++ Parse-RecDescent-1.79.new/demo/demo_operator.pl	Mon Sep 18 08:44:31 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -sw
 +#!/usr/bin/perl -sw
  
  # PARSE LOGICAL EXPRESSIONS
  
---- Parse-RecDescent-1.77/demo_parsetree.pl	Fri Sep 25 06:11:16 1998
-+++ Parse-RecDescent-1.77.paths/demo_parsetree.pl	Sat Feb 19 22:35:00 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_parsetree.pl Parse-RecDescent-1.79.new/demo/demo_parsetree.pl
+--- Parse-RecDescent-1.79/demo/demo_parsetree.pl	Fri Sep 25 06:11:16 1998
++++ Parse-RecDescent-1.79.new/demo/demo_parsetree.pl	Mon Sep 18 08:43:01 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -sw
 +#!/usr/bin/perl -sw
  
  # PARSE LOGICAL EXPRESSIONS TO A "list of lists" PARSE TREE
  
---- Parse-RecDescent-1.77/demo_piecewise.pl	Wed Oct 21 01:27:51 1998
-+++ Parse-RecDescent-1.77.paths/demo_piecewise.pl	Sat Feb 19 22:35:00 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_piecewise.pl Parse-RecDescent-1.79.new/demo/demo_piecewise.pl
+--- Parse-RecDescent-1.79/demo/demo_piecewise.pl	Wed Oct 21 01:27:51 1998
++++ Parse-RecDescent-1.79.new/demo/demo_piecewise.pl	Mon Sep 18 08:44:23 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -ws
 +#!/usr/bin/perl -ws
  
  use Parse::RecDescent;
  
---- Parse-RecDescent-1.77/demo_precalc.pl	Thu Oct  7 09:52:27 1999
-+++ Parse-RecDescent-1.77.paths/demo_precalc.pl	Sat Feb 19 22:35:00 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_precalc.pl Parse-RecDescent-1.79.new/demo/demo_precalc.pl
+--- Parse-RecDescent-1.79/demo/demo_precalc.pl	Thu Oct  7 09:52:27 1999
++++ Parse-RecDescent-1.79.new/demo/demo_precalc.pl	Mon Sep 18 08:42:52 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -ws
 +#!/usr/bin/perl -ws
  
  BEGIN
  {
---- Parse-RecDescent-1.77/demo_recipe.pl	Tue Feb  2 05:50:56 1999
-+++ Parse-RecDescent-1.77.paths/demo_recipe.pl	Sat Feb 19 22:35:00 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_recipe.pl Parse-RecDescent-1.79.new/demo/demo_recipe.pl
+--- Parse-RecDescent-1.79/demo/demo_recipe.pl	Tue Feb  2 05:50:56 1999
++++ Parse-RecDescent-1.79.new/demo/demo_recipe.pl	Mon Sep 18 08:42:05 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -sw
 +#!/usr/bin/perl -sw
  
  # "Potato, Egg, Red meat & Lard Cookbook",
  # T. Omnicient Rash & N. Hot Ignorant-Kant
---- Parse-RecDescent-1.77/demo_scoredsep.pl	Thu Oct  7 08:15:01 1999
-+++ Parse-RecDescent-1.77.paths/demo_scoredsep.pl	Sat Feb 19 22:35:00 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_scoredsep.pl Parse-RecDescent-1.79.new/demo/demo_scoredsep.pl
+--- Parse-RecDescent-1.79/demo/demo_scoredsep.pl	Thu Oct  7 08:15:01 1999
++++ Parse-RecDescent-1.79.new/demo/demo_scoredsep.pl	Mon Sep 18 08:44:17 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -ws
 +#!/usr/bin/perl -ws
  
  use Parse::RecDescent;
  
---- Parse-RecDescent-1.77/demo_selfmod.pl	Fri Sep 25 06:11:13 1998
-+++ Parse-RecDescent-1.77.paths/demo_selfmod.pl	Sat Feb 19 22:35:00 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_selfmod.pl Parse-RecDescent-1.79.new/demo/demo_selfmod.pl
+--- Parse-RecDescent-1.79/demo/demo_selfmod.pl	Fri Sep 25 06:11:13 1998
++++ Parse-RecDescent-1.79.new/demo/demo_selfmod.pl	Mon Sep 18 08:46:00 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -sw
 +#!/usr/bin/perl -sw
  
  # A SELF-MODIFYING**2 PARSER
  
---- Parse-RecDescent-1.77/demo_separators.pl	Fri Jul  2 05:26:39 1999
-+++ Parse-RecDescent-1.77.paths/demo_separators.pl	Sat Feb 19 22:35:00 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_separators.pl Parse-RecDescent-1.79.new/demo/demo_separators.pl
+--- Parse-RecDescent-1.79/demo/demo_separators.pl	Fri Jul  2 05:26:39 1999
++++ Parse-RecDescent-1.79.new/demo/demo_separators.pl	Mon Sep 18 08:44:11 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -ws
 +#!/usr/bin/perl -ws
  
  use Parse::RecDescent;
  
---- Parse-RecDescent-1.77/demo_simple.pl	Wed Aug 11 00:35:48 1999
-+++ Parse-RecDescent-1.77.paths/demo_simple.pl	Sat Feb 19 22:35:00 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_simple.pl Parse-RecDescent-1.79.new/demo/demo_simple.pl
+--- Parse-RecDescent-1.79/demo/demo_simple.pl	Wed Aug 11 00:35:48 1999
++++ Parse-RecDescent-1.79.new/demo/demo_simple.pl	Mon Sep 18 08:45:53 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -sw
 +#!/usr/bin/perl -sw
  
  # WHO IS NEXT TO WHOM?
  
---- Parse-RecDescent-1.77/demo_simpleXML.pl	Mon Jul 12 05:56:50 1999
-+++ Parse-RecDescent-1.77.paths/demo_simpleXML.pl	Sat Feb 19 22:35:00 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_simpleXML.pl Parse-RecDescent-1.79.new/demo/demo_simpleXML.pl
+--- Parse-RecDescent-1.79/demo/demo_simpleXML.pl	Mon Jul 12 05:56:50 1999
++++ Parse-RecDescent-1.79.new/demo/demo_simpleXML.pl	Mon Sep 18 08:45:47 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -w
 +#!/usr/bin/perl -w
  
  package XML2DS;
  use Parse::RecDescent;
---- Parse-RecDescent-1.77/demo_simplequery.pl	Wed Apr 28 00:50:34 1999
-+++ Parse-RecDescent-1.77.paths/demo_simplequery.pl	Sat Feb 19 22:35:00 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_simplequery.pl Parse-RecDescent-1.79.new/demo/demo_simplequery.pl
+--- Parse-RecDescent-1.79/demo/demo_simplequery.pl	Wed Apr 28 00:50:34 1999
++++ Parse-RecDescent-1.79.new/demo/demo_simplequery.pl	Mon Sep 18 08:44:06 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -ws
 +#!/usr/bin/perl -ws
  
  use Parse::RecDescent;
  use Data::Dumper;
---- Parse-RecDescent-1.77/demo_template.pl	Fri Sep 25 06:11:17 1998
-+++ Parse-RecDescent-1.77.paths/demo_template.pl	Sat Feb 19 22:35:00 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_template.pl Parse-RecDescent-1.79.new/demo/demo_template.pl
+--- Parse-RecDescent-1.79/demo/demo_template.pl	Sat Apr  8 11:57:39 2000
++++ Parse-RecDescent-1.79.new/demo/demo_template.pl	Mon Sep 18 08:44:02 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -sw
 +#!/usr/bin/perl -sw
  
  use Parse::RecDescent;
  
---- Parse-RecDescent-1.77/demo_textgen.pl	Wed May 19 04:15:33 1999
-+++ Parse-RecDescent-1.77.paths/demo_textgen.pl	Sat Feb 19 22:35:00 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_textgen.pl Parse-RecDescent-1.79.new/demo/demo_textgen.pl
+--- Parse-RecDescent-1.79/demo/demo_textgen.pl	Wed May 19 04:15:33 1999
++++ Parse-RecDescent-1.79.new/demo/demo_textgen.pl	Mon Sep 18 08:45:41 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -ws
 +#!/usr/bin/perl -ws
  $|++;
  
  use Parse::RecDescent;
---- Parse-RecDescent-1.77/demo_whoson.pl	Sat Feb 27 01:19:03 1999
-+++ Parse-RecDescent-1.77.paths/demo_whoson.pl	Sat Feb 19 22:35:00 2000
+diff -Nru Parse-RecDescent-1.79/demo/demo_whoson.pl Parse-RecDescent-1.79.new/demo/demo_whoson.pl
+--- Parse-RecDescent-1.79/demo/demo_whoson.pl	Sat Feb 27 01:19:03 1999
++++ Parse-RecDescent-1.79.new/demo/demo_whoson.pl	Mon Sep 18 08:43:58 2000
 @@ -1,4 +1,4 @@
 -#! /usr/local/bin/perl -sw
 +#!/usr/bin/perl -sw
