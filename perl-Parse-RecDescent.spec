@@ -16,7 +16,6 @@ BuildRequires:	rpm-perlprov >= 3.0.3-18
 BuildRequires:	perl >= 5.6
 Requires:	perl
 Requires:	%{perl_sitearch}
-BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	perl-Text-Balanced
 
