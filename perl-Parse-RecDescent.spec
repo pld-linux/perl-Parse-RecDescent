@@ -8,7 +8,7 @@ Release:	1
 License:	Perl Artistic License
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Parse/Parse-RecDescent-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Parse/Parse-RecDescent-%{version}.tar.gz
 Patch0:		perl-Parse-RecDescent-paths.patch
 Patch1:		perl-Parse-RecDescent-dep.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-18
