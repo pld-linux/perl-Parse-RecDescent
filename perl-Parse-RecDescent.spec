@@ -28,42 +28,42 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 RecDescent incrementally generates top-down recursive-descent text
 parsers from simple yacc-like grammar specifications. It provides:
- * Regular expressions or literal strings as terminals (tokens),
- * Multiple (non-contiguous) productions for any rule,
- * Repeated, optional and alternate subrules within productions,
- * Late-bound (run-time dispatched) subrules,
- * Full access to Perl within actions specified as part of the
-   grammar,
- * Simple automated error reporting during parser generation and
-   parsing,
- * The ability to commit to, uncommit to, or reject particular
-   productions during a parse,
- * Incremental extension of the parsing grammar (even during a
-   parse),
- * Precompilation of parser objects,
- * User-definable reduce-reduce conflict resolution via
-   "scoring" of matching productions.
+- Regular expressions or literal strings as terminals (tokens),
+- Multiple (non-contiguous) productions for any rule,
+- Repeated, optional and alternate subrules within productions,
+- Late-bound (run-time dispatched) subrules,
+- Full access to Perl within actions specified as part of the
+  grammar,
+- Simple automated error reporting during parser generation and
+  parsing,
+- The ability to commit to, uncommit to, or reject particular
+  productions during a parse,
+- Incremental extension of the parsing grammar (even during a
+  parse),
+- Precompilation of parser objects,
+- User-definable reduce-reduce conflict resolution via
+  "scoring" of matching productions.
 
 %description -l pl
 RecDescent generuje przyrostowo zstêpuj±ce, zmniejszaj±ce
 rekurencyjnie analizatory tekstu w oparciu o prost± specyfikacjê
 gramatyki, podobn± do u¿ywanej przez yacca. Udostêpnia on:
- * Wyra¿enia regularne i ³añcuchy litera³ów jako terminale (tokeny),
- * Wielokrotn± (nieci±g³±) produkcjê dla ka¿dej regu³y,
- * Powtarzane, opcjonalne i alternatywne podregu³y w obrêbie
-   produkcji,
- * Podregu³y pó¼nego wi±zania (wysy³ane w chwili uruchomienia),
- * Pe³en dostêp do Perla w obrêbie akcji okre¶lonych jako czê¶æ
-   gramatyki,
- * Proste, zautomatyzowane sygnalizowanie b³êdów podczas generacji
-   analizatora i podczas analizy,
- * Mo¿liwo¶æ zatwierdzenia, cofniêcia oraz odrzucania poszczególnych
-   produkcji podczas analizy,
- * Przyrostowe rozszerzanie gramatyki podlegaj±cej analizie (nawet
-   podczas samej analizy),
- * Prekompilacjê obiektów analizatora,
- * Definiowalne przez u¿ytkownika rozpoznawanie konfliktów
-   "reduce-reduce" poprzez ocenianie dopasowania produkcji.
+- Wyra¿enia regularne i ³añcuchy litera³ów jako terminale (tokeny),
+- Wielokrotn± (nieci±g³±) produkcjê dla ka¿dej regu³y,
+- Powtarzane, opcjonalne i alternatywne podregu³y w obrêbie
+  produkcji,
+- Podregu³y pó¼nego wi±zania (wysy³ane w chwili uruchomienia),
+- Pe³en dostêp do Perla w obrêbie akcji okre¶lonych jako czê¶æ
+  gramatyki,
+- Proste, zautomatyzowane sygnalizowanie b³êdów podczas generacji
+  analizatora i podczas analizy,
+- Mo¿liwo¶æ zatwierdzenia, cofniêcia oraz odrzucania poszczególnych
+  produkcji podczas analizy,
+- Przyrostowe rozszerzanie gramatyki podlegaj±cej analizie (nawet
+  podczas samej analizy),
+- Prekompilacjê obiektów analizatora,
+- Definiowalne przez u¿ytkownika rozpoznawanie konfliktów
+  "reduce-reduce" poprzez ocenianie dopasowania produkcji.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
