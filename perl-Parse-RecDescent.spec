@@ -15,15 +15,15 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	497600b337a501eae11f31195ccec9d4
 Patch0:		%{name}-paths.patch
-BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-Text-Balanced
 BuildRequires:	perl-devel >= 5.6.1
+BuildRequires:	rpm-perlprov >= 4.1-13
 # these versions included own copy of Text::Balanced
 BuildConflicts:	perl-Parse-RecDescent < 1.92
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_noautoreq	"perl(Calc)"
+%define		_noautoreq	'perl(Calc)'
 
 %description
 RecDescent incrementally generates top-down recursive-descent text
@@ -78,7 +78,8 @@ gramatyki, podobn± do u¿ywanej przez yacca. Udostêpnia on:
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
