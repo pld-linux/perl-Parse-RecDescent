@@ -6,7 +6,7 @@
 %define		pdir	Parse
 %define		pnam	RecDescent
 Summary:	Parse::RecDescent - generate recursive-descent parsers
-Summary(pl):	Parse::RecDescent - generowanie zmniejszaj±cych rekurencyjnie analizatorów
+Summary(pl.UTF-8):   Parse::RecDescent - generowanie zmniejszajÄ…cych rekurencyjnie analizatorÃ³w
 Name:		perl-Parse-RecDescent
 Version:	1.94
 Release:	3
@@ -44,25 +44,25 @@ parsers from simple yacc-like grammar specifications. It provides:
 - User-definable reduce-reduce conflict resolution via
   "scoring" of matching productions.
 
-%description -l pl
-RecDescent generuje przyrostowo zstêpuj±ce, zmniejszaj±ce
-rekurencyjnie analizatory tekstu w oparciu o prost± specyfikacjê
-gramatyki, podobn± do u¿ywanej przez yacca. Udostêpnia on:
-- Wyra¿enia regularne i ³añcuchy litera³ów jako terminale (tokeny),
-- Wielokrotn± (nieci±g³±) produkcjê dla ka¿dej regu³y,
-- Powtarzane, opcjonalne i alternatywne podregu³y w obrêbie
+%description -l pl.UTF-8
+RecDescent generuje przyrostowo zstÄ™pujÄ…ce, zmniejszajÄ…ce
+rekurencyjnie analizatory tekstu w oparciu o prostÄ… specyfikacjÄ™
+gramatyki, podobnÄ… do uÅ¼ywanej przez yacca. UdostÄ™pnia on:
+- WyraÅ¼enia regularne i Å‚aÅ„cuchy literaÅ‚Ã³w jako terminale (tokeny),
+- WielokrotnÄ… (nieciÄ…gÅ‚Ä…) produkcjÄ™ dla kaÅ¼dej reguÅ‚y,
+- Powtarzane, opcjonalne i alternatywne podreguÅ‚y w obrÄ™bie
   produkcji,
-- Podregu³y pó¼nego wi±zania (wysy³ane w chwili uruchomienia),
-- Pe³en dostêp do Perla w obrêbie akcji okre¶lonych jako czê¶æ
+- PodreguÅ‚y pÃ³Åºnego wiÄ…zania (wysyÅ‚ane w chwili uruchomienia),
+- PeÅ‚en dostÄ™p do Perla w obrÄ™bie akcji okreÅ›lonych jako czÄ™Å›Ä‡
   gramatyki,
-- Proste, zautomatyzowane sygnalizowanie b³êdów podczas generacji
+- Proste, zautomatyzowane sygnalizowanie bÅ‚Ä™dÃ³w podczas generacji
   analizatora i podczas analizy,
-- Mo¿liwo¶æ zatwierdzenia, cofniêcia oraz odrzucania poszczególnych
+- MoÅ¼liwoÅ›Ä‡ zatwierdzenia, cofniÄ™cia oraz odrzucania poszczegÃ³lnych
   produkcji podczas analizy,
-- Przyrostowe rozszerzanie gramatyki podlegaj±cej analizie (nawet
+- Przyrostowe rozszerzanie gramatyki podlegajÄ…cej analizie (nawet
   podczas samej analizy),
-- Prekompilacjê obiektów analizatora,
-- Definiowalne przez u¿ytkownika rozpoznawanie konfliktów
+- PrekompilacjÄ™ obiektÃ³w analizatora,
+- Definiowalne przez uÅ¼ytkownika rozpoznawanie konfliktÃ³w
   "reduce-reduce" poprzez ocenianie dopasowania produkcji.
 
 %prep
