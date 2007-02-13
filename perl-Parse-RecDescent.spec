@@ -6,7 +6,7 @@
 %define		pdir	Parse
 %define		pnam	RecDescent
 Summary:	Parse::RecDescent - generate recursive-descent parsers
-Summary(pl.UTF-8):   Parse::RecDescent - generowanie zmniejszających rekurencyjnie analizatorów
+Summary(pl.UTF-8):	Parse::RecDescent - generowanie zmniejszających rekurencyjnie analizatorów
 Name:		perl-Parse-RecDescent
 Version:	1.94
 Release:	3
