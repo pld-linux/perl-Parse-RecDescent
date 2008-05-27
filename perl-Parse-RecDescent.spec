@@ -15,6 +15,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/D/DC/DCONWAY/%{pdir}-%{pnam}-v%{version}.tar.gz
 # Source0-md5:	122fa38d52a701897836370ae022f174
 Patch0:		%{name}-paths.patch
+URL:		http://search.cpan.org/dist/Parse-RecDescent/
 BuildRequires:	perl-Text-Balanced
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
