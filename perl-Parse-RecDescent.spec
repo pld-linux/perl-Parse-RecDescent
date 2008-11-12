@@ -9,7 +9,7 @@ Summary:	Parse::RecDescent - generate recursive-descent parsers
 Summary(pl.UTF-8):	Parse::RecDescent - generowanie zmniejszających rekurencyjnie analizatorów
 Name:		perl-Parse-RecDescent
 Version:	1.95.1
-Release:	3
+Release:	4
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/D/DC/DCONWAY/%{pdir}-%{pnam}-v%{version}.tar.gz
@@ -33,17 +33,15 @@ parsers from simple yacc-like grammar specifications. It provides:
 - Multiple (non-contiguous) productions for any rule,
 - Repeated, optional and alternate subrules within productions,
 - Late-bound (run-time dispatched) subrules,
-- Full access to Perl within actions specified as part of the
-  grammar,
+- Full access to Perl within actions specified as part of the grammar,
 - Simple automated error reporting during parser generation and
   parsing,
 - The ability to commit to, uncommit to, or reject particular
   productions during a parse,
-- Incremental extension of the parsing grammar (even during a
-  parse),
+- Incremental extension of the parsing grammar (even during a parse),
 - Precompilation of parser objects,
-- User-definable reduce-reduce conflict resolution via
-  "scoring" of matching productions.
+- User-definable reduce-reduce conflict resolution via "scoring" of
+  matching productions.
 
 %description -l pl.UTF-8
 RecDescent generuje przyrostowo zstępujące, zmniejszające
@@ -51,8 +49,7 @@ rekurencyjnie analizatory tekstu w oparciu o prostą specyfikację
 gramatyki, podobną do używanej przez yacca. Udostępnia on:
 - Wyrażenia regularne i łańcuchy literałów jako terminale (tokeny),
 - Wielokrotną (nieciągłą) produkcję dla każdej reguły,
-- Powtarzane, opcjonalne i alternatywne podreguły w obrębie
-  produkcji,
+- Powtarzane, opcjonalne i alternatywne podreguły w obrębie produkcji,
 - Podreguły późnego wiązania (wysyłane w chwili uruchomienia),
 - Pełen dostęp do Perla w obrębie akcji określonych jako część
   gramatyki,
@@ -80,8 +77,10 @@ gramatyki, podobną do używanej przez yacca. Udostępnia on:
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
+%{__make} pure_install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/auto/Parse/RecDescent/.packlist
 
 %clean
 rm -rf $RPM_BUILD_ROOT
