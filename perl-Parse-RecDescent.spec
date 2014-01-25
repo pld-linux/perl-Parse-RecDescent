@@ -8,12 +8,12 @@
 Summary:	Parse::RecDescent - generate recursive-descent parsers
 Summary(pl.UTF-8):	Parse::RecDescent - generowanie zmniejszających rekurencyjnie analizatorów
 Name:		perl-Parse-RecDescent
-Version:	1.965001
+Version:	1.967009
 Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/D/DC/DCONWAY/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	e91351ad179a3843fbe8e521b135acaf
+Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	6dab60d44451a9f57a261d1b5358753c
 URL:		http://search.cpan.org/dist/Parse-RecDescent/
 BuildRequires:	perl-Text-Balanced
 BuildRequires:	perl-devel >= 1:5.8.0
