@@ -8,12 +8,12 @@
 Summary:	Parse::RecDescent - generate recursive-descent parsers
 Summary(pl.UTF-8):	Parse::RecDescent - generowanie zmniejszających rekurencyjnie analizatorów
 Name:		perl-Parse-RecDescent
-Version:	1.967009
+Version:	1.967013
 Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	6dab60d44451a9f57a261d1b5358753c
+Source0:	http://www.cpan.org/modules/by-module/Parse/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	98f582240556a4a92e5d57e480f9d39d
 URL:		http://search.cpan.org/dist/Parse-RecDescent/
 BuildRequires:	perl-Text-Balanced
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -78,7 +78,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} pure_install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/auto/Parse/RecDescent/.packlist
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorarch}/auto/Parse/RecDescent/.packlist
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -86,5 +86,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README Changes
-%{perl_vendorlib}/Parse/*.pm
-%{_mandir}/man3/*
+%{perl_vendorlib}/Parse/RecDescent.pm
+%{_mandir}/man3/Parse::RecDescent.3pm*
